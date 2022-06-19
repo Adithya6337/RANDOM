@@ -1,0 +1,13 @@
+#! /usr/bin/bash --
+
+n=54321
+x=0
+y=0
+while [ $n -gt 0 ]
+do
+    x=$(( $n % 10 ))
+    y=$(( $y * 10 + $x ))
+    n=$(( $n / 10 ))
+done
+echo "Reverse number of entered digit is $y"
+

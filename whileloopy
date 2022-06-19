@@ -1,0 +1,16 @@
+#! /usr/bin/bash
+
+a=200
+d=100
+while [ $a -gt $d ]
+do
+ if [ (($a % 2)) -lt $d ]
+  then
+     echo "condition is true"
+ elif [ (($a*2+10)) -eq $d ]
+  then
+     echo "condition is false"
+else
+echo "condition correct"
+fi
+done

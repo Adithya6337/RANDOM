@@ -1,0 +1,10 @@
+#! /bin/bash -x
+
+x=$1
+y=10
+z=20
+if [ $x -eq $y ]
+then 
+ echo "statement is true"
+elif [ $x -
+
