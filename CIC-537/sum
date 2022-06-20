@@ -1,0 +1,12 @@
+#! /bin/bash
+sum=0
+echo enter a number:
+read num
+while [ $num -gt 0 ]
+do
+ rem=`expr $num % 10`
+ num=`expr $num / 10`
+ sum=`expr $sum + $rem`
+done
+echo " enter the sum value is $sum "
+ 

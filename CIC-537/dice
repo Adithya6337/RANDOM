@@ -1,0 +1,18 @@
+#! /bin/bash
+function roll_die() {
+
+  declare -i DIE_SIDES=$1
+
+  if [  $DIE_SIDES -gt 0 ]
+
+  then
+
+   DIE_SIDES=6
+
+  fi
+
+  echo $[ ( $RANDOM % $DIE_SIDES )  + 1 ]
+
+}
+
+roll_die 6
