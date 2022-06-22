@@ -2,7 +2,7 @@
 read -p "Enter number: " n
 
 d=2
-r=1 
+r=1
 while [[ $d -lt $n && $r -ne 0 ]]
 do
         r=`expr $n % $d`
@@ -16,3 +16,14 @@ if [[ $r -eq 0 ]]
 else
       echo "$n is a prime number"
 fi
+
+
+
+
+
+
+
+
+
+
+

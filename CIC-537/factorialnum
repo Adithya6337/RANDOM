@@ -1,8 +1,9 @@
 #!/bin/bash
-read n
-fact=1
+
+read -p "Factorial Number is : " n
+f=1
 for((a=1;a<=n;a++))
 do
- fact=$((fact * a))
+ f=$((f * a))
 done
-echo $fact
+echo $f

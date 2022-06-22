@@ -1,0 +1,7 @@
+#! /bin/bash
+
+name=(0 1 2 a r d "adithya" 4 5 )
+ echo ${name[6]}
+ echo ${name[@]}
+ echo ${#name[@]}
+

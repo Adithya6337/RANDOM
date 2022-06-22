@@ -1,0 +1,14 @@
+#! /bin/bash
+
+echo "enter lower limit"
+read l
+echo "enter higher limit"
+read h
+in=`expr $h - $l`
+echo "10 random numbers between $l and $h are"
+for i in `seq 1 10`
+do
+    a=`expr $RANDOM % $in`
+    b=`expr $a +$l`
+    echo "$b"
+done
