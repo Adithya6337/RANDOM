@@ -5,17 +5,20 @@ count=0
 
 while [ $low -eq 1 ]
 do
-echo "Enter the lower limit"
+echo "Start the limit :"
 read low
 done
 
-echo "Enter the upper limit"
+
+
+echo "Enter the Nth limit :"
 read upper
 
 
 for n in `seq $low $upper`
 do
-a=$(factor $n | grep $n | cut -d ":" -f 2 | cut -d " " -f 2)
+a=$(factor $n | grep $n | cut -d " " -f 2)
+
 
 if [ "$a" -eq "$n" ]
 then
@@ -25,3 +28,4 @@ fi
 done
 
 echo  "There are $count number of prime numbers"
+

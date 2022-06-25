@@ -1,0 +1,26 @@
+#! /bin/bash
+
+low=1
+count=0
+
+while [ $low -eq 1 ]
+do
+echo "Enter the lower limit :"
+read low
+done
+
+
+
+echo "Enter the upper limit :"
+read upper
+
+
+for n in `seq $low $upper`
+do
+a=$(factor $n | grep $n | cut -d " " -f 2)
+if [ "$a" -eq "$n" ]
+then
+echo "$n is prime number"
+((count++))
+fi
+done
